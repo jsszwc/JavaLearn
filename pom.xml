@@ -15,11 +15,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-            <version>4.1.25.Final</version>
-        </dependency>
 
         <dependency>
             <groupId>commons-logging</groupId>
@@ -34,5 +29,20 @@
             <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
+
+        <!--注意redisson依赖于netty，单独引入netty时要注意版本冲突问题-->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.96.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>3.23.3</version>
+        </dependency>
+
+
     </dependencies>
 </project>
